@@ -2,6 +2,17 @@
 
 ## 🏏 T20 World Cup 2022 — Data-Driven Team Selection Engine
 ## ⚡ Building an Unbeatable XI with Analytics, Not Opinions
+![Python](https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white)
+![Pandas](https://img.shields.io/badge/Pandas-150458?style=flat&logo=pandas&logoColor=white)
+![NumPy](https://img.shields.io/badge/NumPy-013243?style=flat&logo=numpy&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat&logo=javascript&logoColor=black)
+![Power BI](https://img.shields.io/badge/Power%20BI-F2C811?style=flat&logo=powerbi&logoColor=black)
+![DAX](https://img.shields.io/badge/DAX-F2C811?style=flat&logo=powerbi&logoColor=black)
+![Power Query](https://img.shields.io/badge/Power%20Query-F2C811?style=flat&logo=powerbi&logoColor=black)
+![Web Scraping](https://img.shields.io/badge/Web%20Scraping-4285F4?style=flat&logo=google&logoColor=white)
+![Bright Data](https://img.shields.io/badge/Bright%20Data-FF6B6B?style=flat&logo=data&logoColor=white)
+![Git](https://img.shields.io/badge/Git-F05032?style=flat&logo=git&logoColor=white)
+![GitHub](https://img.shields.io/badge/GitHub-181717?style=flat&logo=github&logoColor=white)
 
 This end-to-end cricket analytics platform transforms raw 2022 T20 World Cup data into a decision intelligence system capable of selecting the most optimal playing XI under defined performance constraints.
 
