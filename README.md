@@ -7,7 +7,7 @@ This end-to-end cricket analytics platform transforms raw 2022 T20 World Cup dat
 
 ---
 
-# 🎯 Target Performance Constraints
+### 🎯 Target Performance Constraints
 
 - 📈 Score 180+ runs per innings (average)
 
@@ -16,7 +16,7 @@ This end-to-end cricket analytics platform transforms raw 2022 T20 World Cup dat
 - ⚖ Balance aggression + consistency + bowling efficiency
 
 
-# 🏆 Enterprise-Level Impact
+### 🏆 Enterprise-Level Impact
 
 - 🔍 Analyzed 45 international matches
 
@@ -58,7 +58,7 @@ Web Scraping → JSON Data Lake → Python Transformation → CSV Warehouse → 
 
 ---
 ## 🌐 Data Acquisition: Enterprise-Grade Web Scraping
-# 🛠 Tools Used
+### 🛠 Tools Used
 
 - Bright Data Collector
 
@@ -68,7 +68,7 @@ Web Scraping → JSON Data Lake → Python Transformation → CSV Warehouse → 
 
 - ESPNcricinfo source platform
 
-# 📦 Data Extracted
+### 📦 Data Extracted
 Dataset	Volume	Description
 Match Results	45 matches	Teams, margins, venues
 Batting Scorecards	600+ records	Runs, balls, dismissal
@@ -76,7 +76,7 @@ Bowling Scorecards	400+ records	Overs, wickets, economy
 Player Profiles	150+ players	Role, style, metadata
 
 
-# ⚡ Impact
+### ⚡ Impact
 
 - Eliminated manual data entry
 
@@ -85,7 +85,7 @@ Player Profiles	150+ players	Role, style, metadata
 - Automated IP-safe extraction at scale
 
 
-# #🧹 Data Engineering with Python
+## 🧹 Data Engineering with Python
 
 Raw nested JSON files were transformed into analytics-ready datasets using:
 
@@ -98,23 +98,23 @@ Raw nested JSON files were transformed into analytics-ready datasets using:
 - Lambda functions
 
 ## 🔧 Key Transformations
-# ✅ JSON Flattening
+### ✅ JSON Flattening
 
 Converted deeply nested scorecards into tabular structures.
 
-# ✅ Out/Not Out Standardization
+### ✅ Out/Not Out Standardization
 df['out'] = df['dismissal'].apply(lambda x: 0 if x == "" else 1)
 
 
 Impact: Enabled accurate batting average calculation.
 
-# ✅ Player Name Normalization
+### ✅ Player Name Normalization
 
 Removed special characters (†, c, etc.)
 
 Impact: Prevented join failures across datasets.
 
-# ✅ Match ID Mapping
+### ✅ Match ID Mapping
 
 Created a custom dictionary to normalize:
 
@@ -136,25 +136,25 @@ Impact:
 
 The model follows a Star Schema architecture.
 
-# ⭐ Fact Tables
+### ⭐ Fact Tables
 
 - Batting Summary
 
 - Bowling Summary
 
-# 📐 Dimension Tables
+### 📐 Dimension Tables
 
 - Players
 
 - Match Summary
 
-# 🔗 Relationships
+### 🔗 Relationships
 
 - Match ID → Foreign Key
 
 - Player Name → Foreign Key
 
-# 📊 Feature Engineering in Power Query
+### 📊 Feature Engineering in Power Query
 
 - Stage classification (Qualifier vs Super 12)
 
@@ -164,7 +164,7 @@ The model follows a Star Schema architecture.
 
 - Schema normalization
 
-# 📈 Engineering Impact
+### 📈 Engineering Impact
 
 - Improved model query performance
 
@@ -177,8 +177,8 @@ The model follows a Star Schema architecture.
 ## 🧮 KPI Engine — Advanced DAX Analytics
 
 To evaluate performance against the defined objectives, we engineered measurable KPIs.
+### 🏏 Batting Metrics
 ```DAX 
-🏏 Batting Metrics
 Total Runs = SUM(Batting[Runs])
 
 Batting Average = 
@@ -194,7 +194,7 @@ DIVIDE(
 ) * 100
 ```
 
-# 🎯 Bowling Metrics
+### 🎯 Bowling Metrics
 ```DAX
 Total Wickets = SUM(Bowling[Wickets])
 
@@ -211,7 +211,7 @@ DIVIDE(
 )
 ```
 
-# 💥 Boundary Percentage
+### 💥 Boundary Percentage
 ```DAX
 Boundary Runs = 
 (Batting[Fours] * 4) +
@@ -224,7 +224,7 @@ DIVIDE(
 )
 ```
 
-# KPI Coverage
+### KPI Coverage
 
 - 20+ derived measures
 
@@ -237,9 +237,9 @@ DIVIDE(
 ## 🎛 Role-Based Selection Framework
 
 
-# 🔥 Openers (Power Hitters)
+### 🔥 Openers (Power Hitters)
 
-# Criteria
+#### Criteria
 
 - Average > 30
 
@@ -247,13 +247,13 @@ DIVIDE(
 
 - Boundary % > 50
 
-# 📊 Selected:
+#### 📊 Selected:
 
 - Jos Buttler
 
 - Rilee Rossouw
 
-# Combined Output:
+#### Combined Output:
 
 - 40 avg
 
@@ -261,9 +261,9 @@ DIVIDE(
 
 - Aggressive powerplay domination
 ---
-# 🧱 Middle Order (Anchors)
+### 🧱 Middle Order (Anchors)
 
-# Criteria
+#### Criteria
 
 - High average
 
@@ -271,33 +271,33 @@ DIVIDE(
 
 - Stability under pressure
 
-# 📊 Selected:
+#### 📊 Selected:
 
 - Virat Kohli
 
 - Suryakumar Yadav
 
-# Impact
+#### Impact
 
 - Yadav: 190 SR @ 60 avg
 
 -Balanced aggression + reliability
 
 ---
-# ⚡ Finishers
+### ⚡ Finishers
 
 -Explosive but stable when required.
 
-# Criteria:
+#### Criteria:
 
 -SR > 160 in death overs
 
 -Ability to rebuild innings
 
 ---
-# 🌀 All-Rounders (Spin Utility)
+### 🌀 All-Rounders (Spin Utility)
 
-# Criteria
+#### Criteria
 
 - Bat Avg > 15
 
@@ -307,9 +307,9 @@ DIVIDE(
 
 - Strike Rate < 20 balls per wicket
 ---
-# 🐺 Specialist Fast Bowlers — “The Wolf Pack”
+### 🐺 Specialist Fast Bowlers — “The Wolf Pack”
 
-# Criteria
+#### Criteria
 
 - Wicket every ≤16 balls
 
@@ -317,7 +317,7 @@ DIVIDE(
 
 - Low economy
 
-# 📊 Identified Pack:
+#### 📊 Identified Pack:
 
 - Sam Curran
 
@@ -325,7 +325,7 @@ DIVIDE(
 
 - Shaheen Shah Afridi
 
-# Combined Defensive Projection:
+#### Combined Defensive Projection:
 
 - Bowl out opposition ≈ 113 runs
 
@@ -346,12 +346,12 @@ The Power BI dashboard enables:
 ---
 
 ## 🔁 Decision Optimization Example
-# Case Study: Player 6 Swap
+### Case Study: Player 6 Swap
 Metric	  Hardik Pandya	  Marcus Stoinis
 Team Avg	    37.7	         39.6
 Team SR	      151	           154.4
 
-# 📈 Net Impact
+### 📈 Net Impact
 
 - +1.9 runs average improvement
 
