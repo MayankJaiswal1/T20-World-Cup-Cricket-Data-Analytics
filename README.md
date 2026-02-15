@@ -380,16 +380,9 @@ The final XI:
 
 ---
 
-## 📈 Enterprise Value Delivered
-Area	                                               Impact
-Data Collection	                       Automated tournament-wide extraction
-Data Engineering	                     100% normalization consistency
-BI Modeling	                           Scalable Star Schema
-Decision Framework	                   Role-based measurable filtering
-Optimization	                         Quantified team scenario testing
-Governance	                           Reproducible & auditable selection logic
+ 
 
----
+  
 
 ## 🛠 Tech Stack
 
